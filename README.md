@@ -13,4 +13,4 @@ To launch the backend, run `npm start` from the backend folder. The frontend als
 
 `PORT = 8000 `
 
-To launch the frontend, run `npm start` in the frontend folder. You will be redirected to the app at https://localhost:frontendport.
+To launch the frontend, run `npm start` in the frontend folder. You will be redirected to the app at https://localhost:<frontendport>.
