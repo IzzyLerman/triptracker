@@ -1,0 +1,20 @@
+{
+  "name": "travel-log-backend",
+  "version": "2024",
+  "description": "Tracks my travel locations, the dates of the trip, and deatils about the trip.",
+  "main": "travel-log-controller.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon travel-log-controller.mjs"
+  },
+  "author": "lermani",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^6.9.1",
+    "nodemon": "^3.0.1",
+    "rest": "^2.0.0"
+  }
+}

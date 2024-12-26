@@ -1,0 +1,354 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*   ----- Variables  -----  */
+:root {
+    --lightskyblue:rgba(141, 185, 242, .85);
+    --skyblue:#6698D9;
+    --grayish-blue:#232C38;
+    --forest-green:#2C4001;
+    --pastelgreen:#768C46;
+    --lightgray:#D9DCEE;
+    --rockface:#4D4737;
+    --custom-embellishment-name:;
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-color:lightgray;
+    background-image:url("images/shastabg_2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color:var(--grayish-blue);
+    font-family: "Raleway", sans-serif; /* Define with at least one font name and its related generic family name.*/
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    margin:0 auto;
+    padding:0;
+    max-width: 100%;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color: var(--lightskyblue);
+    color: var(--grayish-blue);
+    margin: 2% auto;
+    padding:2px;
+    width: 275px;
+    height: 75px;
+    text-align:center;
+  }
+  main {
+    background-color:var(--pastelgreen);
+    color:var(--grayish-blue);
+    margin:2% 2%;
+    padding: 1em;
+    min-width:600px;
+  }
+  section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    background-color:var(--lightskyblue);
+    color: var(--grayish-blue);
+    margin: 2% auto 2% 5%;
+    padding: 2px;
+    width: 275px;
+    height: 50px;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align:center;
+    display:flex;
+    flex-flow:row wrap;
+    align-content:center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  nav a {
+    background-color:var(--skyblue);
+    border: 2px solid black;
+    border-radius:5px 5px 0 0;
+    padding: 3px 20px 5px 20px;
+    text-decoration: none;
+
+  }
+  nav a:hover {
+    background-color: var(--lightgray);
+    color:black;
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  } 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+
+  h1 img{
+    width: 1em;
+  }
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    background-color:var(--lightgray);
+    border: 2px var(--forest-green) solid;
+    border-radius:5px 5px 0 0;
+    width: 99%;
+  }
+  caption {
+    background-color: var(--lightskyblue);
+    border: 1px solid black;
+    border-radius:5px 5px 0 0;
+    color: var(--grayish-blue);
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1% 0;
+    width: 200px;
+    margin-bottom: 5px;
+
+  }
+  thead {}
+  tbody {text-align:center;}
+  tfoot {}
+  tr {border-bottom: 1px solid var(--forest-green)}
+    tr:nth-child(even) {}
+  th {
+    padding-top: 2px;
+    padding-right:4px;
+    float:center;
+  }
+  td {
+    text-align: center;
+    padding-right:4px;
+  }
+  colgroup {}
+  data {}
+  datalist {}
+
+  tr td {
+    border-bottom: 1px solid var(--forest-green)
+  }
+  
+  /*  ----- Form ----- */
+  form {}
+
+  #formDesc {
+    background-color:var(--lightskyblue);
+    border:1px solid var(--grayish-blue);
+    border-radius: 30px;
+    padding: 14px;
+  }
+
+  fieldset {
+    border:thick double var(--forest-green); 
+    margin-top: 5px; 
+    padding:2px; 
+  }
+  legend {
+    color:var(--grayish-blue); 
+    font-size: 14; 
+  }
+  label {
+    label { 
+    display:block;
+    margin-top:2%; 
+    font-size: 12;
+   }
+  }
+  button {
+    background-color: var(--lightskyblue);
+  }
+  input {
+    background-color: var(--pastelgreen);
+  }
+  select {
+    background-color: var(--lightskyblue);
+  }
+    optgroup {}
+    option {}
+  textarea {}
+  output {}
+  meter {}
+  progress {}
+  input, button, textarea, select { 
+    font-size:110%; 
+    padding:1%;
+    font-family:inherit; 
+
+  }
+  :focus{ 
+    background-color: var(--lightskyblue); 
+  }
+  *:required { 
+    border:2px solid green; 
+  }
+  label.required:after { 
+    content:" *";
+    color:darkred; 
+  }
+  input:invalid { 
+    border:2px solid darkred; 
+  } 
+  input:valid { 
+    border:2px solid green; 
+  }
+  input::placeholder, textarea::placeholder { 
+    color: var(--skyblue); 
+  }
+  input[type=checkbox]:checked + label { 
+    color: green; 
+    font-style: italic; 
+  }
+  input:disabled, textarea:disabled { 
+    background: repeating-linear-gradient(142deg, #CCCCCC, #CCCCCC 4px, #999999 22px); 
+  } 
+  input:enabled,textarea:enabled { 
+    background: var(--lightskyblue); 
+  }
+  
+
+  /* ----- Media ----- */
+  figure {
+    
+  }
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+ .gallery{
+    display:flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+ }
+  .gallery figure{
+    margin: 1%;
+    padding: 1%;
+    justify-content: center; 
+    align-items: center; 
+    width:320px;
+  }
+  .gallery figcaption{
+    display:block;
+    padding:1%;
+    color: var(--grayish-blue);
+  }
+  .gallery img{
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    height: auto;
+  }
+  .local a {
+    background-color: var(--rockface);
+    color: var(--grayish-blue);
+
+  }
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  .rightAlign{
+    text-align:right;
+  }
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {
+
+  }
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  

@@ -1,0 +1,82 @@
+### CREATE five documents.
+POST http://localhost:3000/travel-log HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "London, UK",
+    "length": 21,
+    "startingDate": "2003-02-04"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/travel-log HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "Acadia National Park, ME",
+    "length": 14,
+    "startingDate": "07-11-08"
+}
+
+### CREATE 3
+POST http://localhost:3000/travel-log HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "Northampton, VT",
+    "length": 5,
+    "startingDate": "06-02-23"
+}
+
+### CREATE 4
+POST http://localhost:3000/travel-log HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "Costa Rica",
+    "length": 21,
+    "startingDate": "07-15-2017"
+}
+
+### CREATE 5
+POST http://localhost:3000/travel-log HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "Cambodia",
+    "length": 21,
+    "startingDate": "06-28-2018"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/travel-log HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/travel-log/6654b8bf51a3cb8523def7f8 HTTP/1.1
+
+
+### UPDATE one document's length, by ID.
+### Replace the ID in the following request with one that exists
+### and update the length:
+PUT http://localhost:3000/travel-log/66542bf115c21a0699f62d7f HTTP/1.1
+content-type: application/json
+
+{
+    "locationTitle": "London, UK",
+    "length": 15,
+    "startingDate": "02-04-03"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/travel-log/66542bf115c21a0699f62d7f HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/travel-log HTTP/1.1
+
